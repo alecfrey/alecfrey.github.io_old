@@ -111,18 +111,22 @@ input, select {
 	font-size: 750%;
 	font-family: tileFont;
 	text-align: center;
-	padding: 2%;
+	padding: 1%;
 	text-shadow: #666666 3px 3px 3px;
 	background-color: #f4d5d5;
 	border-bottom: 5px solid lightgray;
 }
 
+ul {
+	padding: 0;
+}
 ul li {
 	display: inline-block;
 	margin: 0 12px;
 	cursor: pointer;
 	font-size: 30px;
-
+	padding: 0;
+	text-shadow: none;
 }
 
 ul li:hover a{
@@ -136,4 +140,17 @@ ul li a {
 
 ul bar {
 	
+}
+
+.about {
+	font-size: 400%;
+	font-family: tileFont;
+	padding-left: 20%;
+	padding-top: 7%;
+}
+
+p {
+	font-size: 35%;
+	padding-top: 2%;
+	padding-left: 3% 
 }
