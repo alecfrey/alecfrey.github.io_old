@@ -140,13 +140,14 @@ ul li a {
 	font-family: tileFont;
 	padding-left: 12%;
 	padding-top: 7%;
+	border-bottom: 5px solid lightgray;
+
 }
 
 p {
 	font-size: 35%;
 	padding-top: none;
 	padding-left: 3% 
-
 }
 
 .profilePic {
@@ -162,4 +163,13 @@ p {
 	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
 	position: absolute;
 	left: 60%;
+	top: 35%;
+}
+
+.projects {
+	font-size: 400%;
+	font-family: tileFont;
+	padding-left: 12%;
+	padding-top: 7%;
+	background-color: #C0C0C0;
 }
