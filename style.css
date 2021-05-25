@@ -103,7 +103,12 @@ input, select {
 
 @font-face {
     font-family: 'tileFont'; 
-    src: url("fonts/Pattaya-Regular.ttf");
+    src: url("fonts/pattaya/Pattaya-Regular.ttf");
+}
+
+@font-face {
+    font-family: 'generalText'; 
+    src: url("fonts/montserrat/Montserrat-Italic.ttf");
 }
 
 .title {
@@ -170,6 +175,19 @@ p {
 	font-size: 400%;
 	font-family: tileFont;
 	padding-left: 12%;
-	padding-top: 7%;
+	padding-top: 3%;
 	background-color: #C0C0C0;
+	border-bottom: 5px solid lightgray;
+}
+
+.text {
+	font-family: generalText;
+	font-size: 50%; 
+}
+
+.accomplishments {
+	font-size: 400%;
+	font-family: tileFont;
+	padding-left: 12%;
+	padding-top: 7%;
 }
