@@ -24,7 +24,7 @@ time, mark, audio, video {
     outline:0;
     font-size:100%;
     vertical-align:baseline;
-    background: #f4d5d5;
+    background: 0;
 }
 
 body {
@@ -111,6 +111,7 @@ input, select {
 	font-size: 1000%;
 	font-family: tileFont;
 	text-align: center;
-	padding: 5%;
+	padding: 3%;
 	text-shadow: #666666 5px 5px 5px;
+	background-color: #f4d5d5;
 }
