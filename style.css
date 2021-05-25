@@ -90,11 +90,11 @@ table {
 /* change border colour to suit your needs */
 hr {
     display:block;
-    height:1px;
+    height:10px;
     border:0;  
     border-top:1px solid #cccccc;
     margin:1em 0;
-    padding:0;
+    padding:10;
 }
 
 input, select {
@@ -108,10 +108,11 @@ input, select {
 
 .title {
 	color: #80c0c0;
-	font-size: 1000%;
+	font-size: 750%;
 	font-family: tileFont;
 	text-align: center;
 	padding: 3%;
 	text-shadow: #666666 5px 5px 5px;
 	background-color: #f4d5d5;
+	border-bottom: 5px solid lightgray;
 }
