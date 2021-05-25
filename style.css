@@ -112,5 +112,5 @@ input, select {
 	font-family: tileFont;
 	text-align: center;
 	padding: 5%;
-	text-shadow: 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black;
+	text-shadow: #666666 5px 5px 5px;
 }
