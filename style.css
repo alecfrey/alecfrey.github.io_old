@@ -117,9 +117,6 @@ input, select {
 	border-bottom: 5px solid lightgray;
 }
 
-ul {
-	padding: 0;
-}
 ul li {
 	display: inline-block;
 	margin: 0 12px;
@@ -138,10 +135,6 @@ ul li a {
 	transition: all 0.5s ease;
 }
 
-ul bar {
-	
-}
-
 .about {
 	font-size: 400%;
 	font-family: tileFont;
@@ -151,6 +144,23 @@ ul bar {
 
 p {
 	font-size: 35%;
-	padding-top: 2%;
+	padding-top: none;
 	padding-left: 3% 
+
+}
+
+.profilePic {
+	border: 2px solid black;
+	border-radius: 50%;
+	width: 350px;
+	height: 350px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	position: absolute;
+	left: 60%;
+	top: 45%;
 }
