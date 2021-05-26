@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<meta charset="UTF-8">
 		<title>alec frey</title>
 
 		<link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
@@ -11,23 +12,27 @@
 		<link rel="stylesheet" href="style.css">
 	</head>
 	<body>
-		<h1 class="title">Alec Frey
-			<div>
+		<h1 class="nav">Alec Frey
+			<nav class="sticky">
 				<ul>
 					<li><a href="https://www.linkedin.com/in/alec-frey"><i class="fab fa-linkedin-in"></i></a></li>
 					<li><a href="https://twitter.com/alecfrey"><i class="fab fa-twitter"></i></a></li>
 					<li><a href="https://mail.google.com/mail/u/0/?fs=1&to=afrey@iastate.edu&tf=cm"><i class="fas fa-envelope"></i></a></li>
-
-					<bar>
-						<li><a href=""><i class="fas fa-bars"></i></a></li>
-					</bar>
+					<li><a href="#"><i class="fas fa-bars"></i></a>
+						<ul>
+							<li><a href="#aboutsection">About Me</a></li>
+							<li><a href="#projectsection">Projects</a></li>
+							<li><a href="https://mail.google.com/mail/u/0/?fs=1&to=afrey@iastate.edu&tf=cm">Contact</a></li>
+						</ul>
+					</li>
 				</ul>
-			</div>
+			</nav>
 			<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 		</h1>
 		<div>
+			<a name="aboutsection"></a>
 			<h2 class="about">About Me
-				<img class="profilePic" src="pics/me.png" alt="Alec Frey" />
+				<img class="profilePic" src="pics/me.png" alt="Alec Frey#" />
 				<p class="text">
 					<br></br>
 					TBD
@@ -46,6 +51,7 @@
 			</h2>
 		</div>
 		<div>
+			<a name="projectsection"></a>
 			<h3 class="projects">Projects
 				<p class="text">
 					<br></br>
@@ -69,5 +75,8 @@
 				</p>
 			</h3>
 		</div>
+
+		<script src="script.js"></script>
+
 	</body>
 </html>
