@@ -249,3 +249,9 @@ h3 {
 		font-family: generalText;
 
 }
+
+video {
+	position: absolute;
+	left: 62%;
+	top: 110%;
+}
