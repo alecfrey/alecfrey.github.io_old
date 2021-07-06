@@ -119,7 +119,8 @@ input, select {
 	padding: 1%;
 	text-shadow: #666666 3px 3px 3px;
 	background-color: #f4d5d5;
-	border-bottom: 5px solid lightgray;
+	border-bottom: 2px solid lightgray;
+	
 	position: -webkit-sticky;
 	position: sticky;
 	top: 0;
@@ -194,14 +195,6 @@ ul li a {
 	border-radius: 5px;
 }
 
-.about {
-	font-size: 400%;
-	font-family: tileFont;
-	padding-left: 12%;
-	padding-top: 7%;
-	border-bottom: 5px solid lightgray;
-}
-
 p {
 	font-size: 35%;
 	padding-top: none;
@@ -211,31 +204,51 @@ p {
 .profilePic {
 	border: 2px solid black;
 	border-radius: 50%;
-	width: 500px;
-	height: 500px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	width: 35%;
+	height: 35%;
 	box-shadow: 0 0 8px rgba(0, 0, 0, .8);
 	-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
 	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-	position: absolute;
-	left: 65%;
-	top: 30%;
+	float: right;
+	max-height: 500px;
+	max-width: 500px;
+	margin-left: 40px;
+	margin-bottom: 20px;
+}
+
+.profilePic.bottom {
+	display: none;
+}
+
+.content  {
+	float: left;
 }
 
 .projects {
 	font-size: 400%;
 	font-family: tileFont;
-	padding-left: 12%;
-	padding-top: 3%;
+	padding: 6% 10%;
 	background-color: #C0C0C0;
-	border-bottom: 5px solid lightgray;
+	line-height: 70%;
+}
+
+.projects.project-white {
+	background-color: white;
+	border-bottom: 2px solid #A0A0A0
+}
+
+.clear {
+	clear: both;
+}
+
+.projects h2 {
+	font-family: tileFont;
 }
 
 .text {
 	font-family: generalText;
-	font-size: 45%; 
+	font-size: 45%;
+	padding-top: 40px;
 }
 
 .accomplishments {
@@ -245,31 +258,54 @@ p {
 	padding-top: 7%;
 }
 
-h3 {
+h2 {
 	font-family: generalText;
 }
 
+h3 {
+	font-weight: normal;
+	line-height: 100%;
+}
+
 video {
-	position: absolute;
-	left: 62%;
-	top: 110%;
 	border: 5px solid black;
+	float: right;
+	margin-left: 40px;
+}
+
+.video-bottom {
+	display: none;
 }
 
 .slide-container {
-	width: 1024px;
-	height: 768px;
+	width: 100%;
+	overflow: hidden;
+	height: 0;
+	position: relative;
+	padding-top: 75%;
 	margin-left: auto;
 	margin-right: auto;
-	overflow: hidden;
-	text-align: center;
 	border: 5px solid black;
+}
+
+.slide-container-scaled {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+.slide-container-relative {
 	position: relative;
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
 }
 
 .image-container {
-	width: 6144px;
-	height: 768px;
+	width: 600%;
+	height: 100%;
 	position: relative;
 	transition: left 2s;
 	-webkit-transition: left 2s;
@@ -281,6 +317,7 @@ video {
 	float: left;
 	margin: 0px;
 	padding: 0px;
+	height: 100%;
 }
 
 .button-container {
@@ -296,6 +333,11 @@ video {
 	width: 10px;
 	border-radius: 5px;
 	background-color: white;
+	transition: 0.3s opacity;
+}
+
+.slider-button:hover {
+	opacity: 0.6;
 }
 
 #slider-image-1:target ~ .image-container {
@@ -303,21 +345,71 @@ video {
 }
 
 #slider-image-2:target ~ .image-container {
-	left: -1024px;
+	left: -100%;
 }
 
 #slider-image-3:target ~ .image-container {
-	left: -2048px;
+	left: -200%;
 }
 
 #slider-image-4:target ~ .image-container {
-	left: -3072px;
+	left: -300%;
 }
 
 #slider-image-5:target ~ .image-container {
-	left: -4096px;
+	left: -400%;
 }
 
 #slider-image-6:target ~ .image-container {
-	left: -5120px;
+	left: -500%;
+}
+
+.slide-container > span {
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+@media (max-width: 900px) {
+	.profilePic.bottom {
+		width: 45%;
+		height: 45%;
+		float: none;
+		margin-right: auto;
+		margin-left: auto;
+		margin-top: 40px;
+		display: block;
+	}
+
+	.profilePic.right {
+		display: none;
+	}
+
+	.content {
+		float: none;
+	}
+}
+
+@media (max-width: 1450px) {
+	.video-right {
+		display: none;
+	}
+
+	.video-bottom {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 100%;
+		max-height: 471px;
+		max-width: 620px;
+		float: none;
+	}
+}
+
+@media (min-width: 1250px) {
+	.slide-container {
+		padding-top: 0;
+		height: 768px;
+		width: 1024px;
+	}
 }
