@@ -108,11 +108,10 @@ input, select {
 	font-size: 750%;
 	font-family: tileFont;
 	text-align: center;
-	padding: 1%;
+	padding: 0.4%;
 	text-shadow: #666666 3px 3px 3px;
 	background-color: #f4d5d5;
 	border-bottom: 2px solid lightgray;
-	
 	position: -webkit-sticky;
 	position: sticky;
 	top: 0;
