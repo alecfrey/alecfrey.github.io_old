@@ -105,10 +105,10 @@ input, select {
 
 .nav {
 	color: #80c0c0;
-	font-size: 750%;
+	font-size: 600%;
 	font-family: tileFont;
 	text-align: center;
-	padding: 0.4%;
+	padding: 1%;
 	text-shadow: #666666 3px 3px 3px;
 	background-color: #f4d5d5;
 	border-bottom: 2px solid lightgray;
