@@ -95,12 +95,12 @@ input, select {
 
 @font-face {
     font-family: 'tileFont'; 
-    src: url("fonts/pattaya/Pattaya-Regular.ttf");
+    src: url("fonts/opensans/OpenSans-SemiBold.ttf");
 }
 
 @font-face {
     font-family: 'generalText'; 
-    src: url("fonts/montserrat/Montserrat-Italic.ttf");
+    src: url("fonts/montserrat/Montserrat-Medium.ttf");
 }
 
 .nav {
@@ -109,7 +109,7 @@ input, select {
 	font-family: tileFont;
 	text-align: left;
 	padding: 1%;
-	text-shadow: #666666 3px 3px 3px;
+	text-shadow: #666666 1px 1px 1px;
 	background-color: #f4d5d5;
 	border-bottom: 2px solid lightgray;
 	position: -webkit-sticky;
