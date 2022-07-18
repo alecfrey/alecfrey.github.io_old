@@ -131,6 +131,11 @@ ul li:hover a{
 	color: #A9A9A9
 }
 
+#img{
+  position: relative;
+  top: 4px;
+  }
+
 ul li a {
 	color: black;
 	transition: all 0.5s ease;
