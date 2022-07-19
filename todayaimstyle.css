@@ -14,7 +14,7 @@
  }
 
 
-body {
+head, body {
   background: #B45CEA;
   background: -webkit-linear-gradient(to right, #B45CEA, #871acb);
   background: linear-gradient(to right, #B45CEA, #871acb);
