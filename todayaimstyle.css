@@ -1,0 +1,21 @@
+.footer{ 
+       position: fixed;     
+       text-align: center;    
+       bottom:10px; 
+       width: 100%;
+   } 
+     #container {
+    position: relative;
+    height: 100%;
+ }
+ #footer {
+    position: absolute;
+    bottom: 0;
+ }
+
+
+body {
+  background: #B45CEA;
+  background: -webkit-linear-gradient(to right, #B45CEA, #871acb);
+  background: linear-gradient(to right, #B45CEA, #871acb);
+}
